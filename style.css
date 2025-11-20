@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4e1d2; /* Sand tone */
+  color: #333;
+}
+
+header, section, footer {
+  background: #fff;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: #6b4e3d; /* Bronze tone */
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+.challenge-button {
+  display: inline-block;
+  background-color: #6b4e3d;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.challenge-button:hover {
+  background-color: #8c6f5a;
+}
+
+.pathway-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pathway-card {
+  background-color: #f9e8d0;
+  border: 1px solid #d2b48c;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.resources ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resources li {
+  margin-bottom: 8px;
+}
+
+.resources a {
+  color: #6b4e3d;
+  text-decoration: none;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}

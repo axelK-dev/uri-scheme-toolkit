@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URI Scheme Toolkit</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        h1 { color: #2c3e50; }
+        .button-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px; }
+        .uri-button { padding: 15px 25px; background-color: #3498db; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; text-decoration: none; }
+        .uri-button:hover { background-color: #2980b9; }
+        footer { margin-top: 40px; font-size: 14px; color: #7f8c8d; }
+    </style>
+</head>
+<body>
+    <h1>URI Scheme Toolkit</h1>
+    <p>Explore the hidden powers of URI schemes! Tap a button below to try:</p>
+    <div class="button-container">
+        <a class="uri-button" href="mailto:someone@example.com?subject=Hello&body=I%20just%20learned%20URI%20schemes!">Send Email</a>
+        <a class="uri-button" href="tel:+1234567890">Call Phone</a>
+        <a class="uri-button" href="sms:+1234567890?body=Hello%20from%20URI%20Toolkit">Send SMS</a>
+        <a class="uri-button" href="geo:47.6062,-122.3321">Open Map (Seattle)</a>
+    </div>
+    <footer>
+        <p>Learn more in <a href="README.md">README</a> | Check <a href="roadmap.md">Roadmap</a></p>
+    </footer>
+</body>
+</html>
