@@ -266,12 +266,14 @@ Email templates
 They’re great for low-code automation and user-friendly scripting.
 ________________________________________
 🔁 Terminal vs. URI Scheme (Side-by-Side)
-Action	Terminal Command	URI Scheme	Where It Works
-Open website	curl https://example.com	https://example.com	Browser, terminal
-Send email	mail someone@example.com	mailto:someone@example.com	Browser, apps
-Open map	xdg-open "geo:..."	geo:37.7749,-122.4194	Mobile, browser
-Join Zoom	Start-Process "zoommtg://..."	zoommtg://...	Desktop, mobile
-Call phone	telnet or VoIP tools	tel:+1234567890	Mobile, browser
+
+| Action        | Terminal Command                  | URI Scheme                      | Where It Works          |
+|--------------|-----------------------------------|---------------------------------|-------------------------|
+| Open website | `curl https://example.com`       | `https://example.com`          | Browser, terminal       |
+| Send email   | `mail someone@example.com`       | `mailto:someone@example.com`   | Browser, apps           |
+| Open map     | `xdg-open "geo:..."`             | `geo:37.7749,-122.4194`        | Mobile, browser         |
+| Join Zoom    | `Start-Process "zoommtg://..."`  | `zoommtg://...`                | Desktop, mobile         |
+| Call phone   | `telnet` or VoIP tools           | `tel:+1234567890`              | Mobile, browser         |
 ________________________________________
 Full path from code to webpage, including how it interacts with each layer of the IP stack and other key systems:
 ________________________________________
@@ -325,25 +327,12 @@ ________________________________________
 Clicking, typing, scrolling → Triggers frontend logic.
 May send new requests → Repeats the stack cycle.
 
-```mermaid
-graph TD
-A[Code Written 🧑‍💻] --> B[Build & Test 🔧]
-B --> C[CI/CD Pipeline 🚀]
-C --> D[Deployment to Server 🖥️]
-D --> E[DNS Resolution 🌐]
-E --> F[IP Stack Interaction 📡]
-F --> G[Web Server Receives Request 🧠]
-G --> H[Backend Logic & Database Query 🗄️]
-H --> I[Response Sent to Browser 📦]
-I --> J[Browser Renders Page 🖥️]
-J --> K[User Interacts 🔁]
+![alt text](image-1.png)
 
-%% IP Stack Layers as separate nodes
-F --> F1[Application Layer (HTTP/HTTPS)]
-F1 --> F2[Transport Layer (TCP)]
-F2 --> F3[Network Layer (IP)]
-F3 --> F4[Data Link Layer (Ethernet/Wi-Fi)]
-F4 --> F5[Physical Layer (Cables/Wireless)]
+
+
+![IP Stack](/stack.png)
+
 ________________________________________
 🧭 Bottom Line
 Learning URI schemes is worth it, especially if you're working in environments where terminal access is limited. They give you command-like power in a browser-native way.
