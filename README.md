@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 🌐 URI Scheme Toolkit
 Welcome to the URI Scheme Toolkit—a lightweight, mobile-friendly dashboard designed to help learners of all ages explore the hidden powers of URI schemes and build real-world tech skills. Whether you're a curious student, a parent, or an educator, this toolkit is your launchpad into the world of cybersecurity, DevOps, and digital literacy.
 
@@ -134,3 +135,6 @@ HTMLmailto:someone@example.com?subject=Hello&body=I%20just%20learned%20how%20to%
 🧰 Build Tools with Markdown & URI Schemes
 🌐 Understand How the Internet Works
 📱 Make Your Own Mobile App
+=======
+# project-template
+>>>>>>> 61e9dd271f95b0e9497b8c615dc010ffe17081a3
